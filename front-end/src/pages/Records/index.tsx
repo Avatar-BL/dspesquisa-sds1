@@ -6,7 +6,7 @@ import { formatDate } from './Helpers';
 import Pagination from './Pagination';
 import Filters from '../../components/Filters'
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = process.env.REACT_APP_API_URL
 
 const Records = () => {
     const [ recordsResponse, setRecordsResponse ] = useState<RecordsResponse>();

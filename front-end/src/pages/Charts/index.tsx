@@ -27,7 +27,7 @@ const Charts = () => {
     const [platformData, setPlatformData] = useState<PieChartData>(initialPieData);
     const [genderData, setPlatGenderData] = useState<PieChartData>(initialPieData);
 
-    const BASE_URL = 'http://localhost:8080'
+    const BASE_URL = process.env.REACT_APP_API_URL
 
     useEffect(() => {
         async function getData() {
